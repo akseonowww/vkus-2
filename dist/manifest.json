@@ -1,0 +1,40 @@
+{
+   "manifest_version": 3,
+   "name": "VKUS - плеер для ВКонтакте",
+   "description": "VK Universe Sound",
+   "version": "0.1.0",
+   "action": {
+      "default_popup": "popup.html",
+      "default_title": "VKUS",
+      "default_icon": {
+         "16": "icon16.png",
+         "24": "icon24.png",
+         "32": "icon32.png",
+         "48": "icon48.png",
+         "128": "icon128.png",
+         "300": "icon300.png"
+      }
+   },
+   "permissions": ["activeTab", "tabs", "storage", "identity", "scripting"],
+   "icons": {
+      "16": "icon16.png",
+      "24": "icon24.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png",
+      "300": "icon300.png"
+   },
+   "options_ui": {
+      "page": "popup.html",
+      "open_in_tab": true
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [
+      {
+         "matches": ["https://vk.com/*"],
+         "js": ["contentScript.js"]
+      }
+   ]
+}

@@ -1,0 +1,397 @@
+   /*анимации*/
+   @keyframes sizeBig {
+      from {
+         transform: scale(1.2) translate(-10px, -12px);
+         opacity: 0.5;
+      }
+      20% {
+         transform: scale(1.9) translate(-18px, -15px);
+         filter: blur(9px);
+         border-radius: 30px;
+         opacity: 0.7;
+      }
+      40% {
+         transform: scale(1.5) translate(-10px, -12px);
+         opacity: 0.5;
+      }
+      60% {
+         transform: scale(1.9) translate(-18px, -15px);
+         filter: blur(9px);
+         border-radius: 30px;
+         opacity: 0.7;
+      }
+      to {
+         transform: scale(1.2) translate(-10px, -12px);
+         opacity: 0.5;
+      }
+   }
+
+   [class*="AudioPlayerBlock"] section {
+      /*border: 2px solid #447BBA !important;*/
+      padding: 0 !important;
+   }
+
+   [data-testid='audioplayerblocksectionslayout'] {
+      display: flex !important;
+      height: 120px !important; 
+      padding: 16px !important;
+   }
+
+
+   /*трек*/
+   /*трек-управ*/
+   [data-testid="audioplayerblocksectionslayout-playbackcontrols"] {
+      padding: 0 !important;
+      width: 0;
+   }
+   [class*="AudioPlayerPlaybackControlsContainer-module__playbackControls"] button,
+   [data-testid="audioplayerblocksectionslayout-usercontrols"] button,
+   [class*="AudioPlayerPlaybackControlsContainer-module__playbackButtonsContainer"] button,
+   [aria-label="Не нравится"],
+   ${player.buttons.recoms},
+   [data-testid="audio-player-block-lyrics-button"] {
+      position: absolute ;
+      bottom: 0 ;
+      left: 0 ;
+      z-index: 1 ;
+      padding: 0 ;
+      transition: left .5s, right .5s;
+   }
+
+   /* 
+   [class*="AudioPlayerPlaybackControlsContainer-module__playbackButtonsContainer"] button {
+      border: 2px solid purple !important;
+   }
+   [class*="AudioPlayerPlaybackControlsContainer-module__playbackControls"] button {
+      border: 2px solid red !important;
+   }
+   [data-testid="audioplayerblocksectionslayout-usercontrols"] {
+      border: 2px solid blue !important;
+   }   
+   */
+   ${player.controls.main.play} {
+      left: 50% !important;
+      bottom: 14px !important;
+      margin-left: calc(-15px - -52px);
+   } 
+
+   ${player.controls.main.next} {
+      left: 50% !important;
+      bottom: 13px !important;
+      margin-left: calc(-13px - -82px);
+      transform: translateX(4px);
+   } 
+
+   ${player.controls.main.prev} {
+      left: 50% !important;
+      bottom: 13px !important;
+      margin-left: calc(-13px - -16px);
+      transform: translateX(-4px);
+   } 
+
+   ${player.controls.main.prev} svg,
+   ${player.controls.main.next} svg {
+      width: 30px !important;
+      height: 30px !important;
+   }
+
+   ${player.controls.other.repeat} {
+      left: 50% !important;
+      bottom: 16px !important;
+      margin-left: calc(-12px - 19px);
+   } 
+
+   ${player.controls.other.shuffle} {
+      left: 50% !important;
+      bottom: 17px !important;
+      margin-left: calc(-12px - 51px);
+   } 
+
+   ${player.controls.user.share} {
+      left: 50% !important;
+      bottom: 16px !important;
+      margin-left: calc(-12px - -153px);
+   } 
+
+   ${player.buttons.recoms} {
+      left: 50% !important;
+      bottom: 16px !important;
+      margin-left: calc(-12px - -117px);
+   }
+
+   ${player.buttons.recoms} * {
+      cursor: pointer;
+   }
+
+   ${player.buttons.add},
+   ${player.buttons.remove}  {
+      position: absolute  !important;
+      margin-left: 0;
+      bottom: auto !important;
+      left: auto !important;
+      top: 16px !important;
+      right: 79px !important;
+   }
+
+   ${player.controls.user.broadcastOn},
+   ${player.controls.user.broadcastOff} {
+      margin-left: 0;
+      height: fit-content;
+      left: 117px  !important;
+      bottom: 15px  !important;
+   }
+
+   ${player.controls.user.broadcastOn}::before,
+   ${player.controls.user.broadcastOff}::before {
+      content: "Не транслируется";
+      position: absolute;
+      width: 130px;
+      text-align: left;
+      color: var(--vkui--color_text_secondary);
+      margin: 4px 0 0 20px !important;
+   }
+
+   ${player.controls.user.broadcastOff}::before {
+      content: "Транслируется";
+      color: var(--vkui--color_icon_accent);
+   }
+
+   [aria-label="Не нравится"] {
+      right: 15px !important;
+      top: 16px !important;
+      left: auto !important;
+      bottom: auto !important;
+      /*opacity: 0;*/
+   }
+
+   .vkusIconBlock {
+      position: absolute;
+      right: 15px !important;
+      top: 16px !important;
+      left: auto !important;
+      bottom: auto !important;
+      border: none;
+      background: transparent !important;
+      padding: 0 !important;
+      transform: scale(.9) !important;
+      height: 28px !important;
+   }
+
+   [data-testid="audio-player-block-lyrics-button"] {
+      left: auto !important;
+      bottom: auto !important;
+      top: 16px !important;
+      right: 47px !important;
+   }
+
+   /*другие сервисы*/
+   /*vk next*/
+   .e47qq1XqMPp6oTp7 button {
+      position: absolute !important;
+      left: auto !important;
+      right: 107px !important;
+      bottom: auto !important;
+      top: 16px !important;
+   }
+   .vknext-btn-ecvalazer,
+   .vknext-btn-download,
+   .e47qq1XqMPp6oTp7 button.X8NWqf8BjdA0PNtu {
+      right: 133px !important;
+   }
+
+   /*blue player*/
+   ._2ZFZ8lybNc, ._2H1LxJ1VCu,  .rJnwcSlEHt {
+      position: absolute !important;
+      bottom: 10px !important;
+      right: 159px !important;
+      top: auto  !important;
+      left: auto !important;   
+      position: absolute;
+      bottom: 16px;
+      right: 118px;
+   }
+
+   div[id*="1724148523663"] {
+      position: absolute !important;
+      bottom: 10px !important;
+      right: 159px !important;
+      top: auto  !important;
+      left: auto !important;
+   }
+
+   ${player.controls.user.sound} {
+      position: absolute;
+      left: auto !important;
+      bottom: 16px !important;
+      margin-left: 0;
+      right: 15px;
+      /*border: 2px solid green;*/
+   }
+
+   ${player.controls.user.sound} button {
+      position: relative;
+   }
+
+   ${player.controls.user.sound} svg {
+      width: 24px !important;
+      height: 24px !important;
+      margin-right: 10px !important;
+   }
+
+   [class*="AudioPlayerVolumeSlider-module__barSize"] {
+      width: 100px;
+   }
+
+   [data-testid="audioplayerplaybackbody-progresstime"] {
+   position: absolute !important;
+      bottom: 51px !important;
+      right: 20px !important;
+   }
+
+   /*фон дорожки звука*/
+   .Slider-module__backTrackBackground--LegyH.Slider-module__sliderPrimary--HV2wY::before {
+      background-color: var(--vkui--color_search_field_background);
+   }
+
+   /*доп*/
+/*
+   ${player.buttons.is} button {
+      border: 2px solid yellow !important;
+   }
+*/
+
+
+
+   /*трек-описание*/
+   ${player.info.is} {
+      width: 100% !important;,
+      font-size: 20px !important;
+      /*position: absolute;*/
+   }
+
+
+   /*обложка*/
+   ${player.info.cover.is} {
+      padding-right: 12px !important;
+      transition: transform 0.7s;
+   }
+   ${player.info.cover.is} * {
+      cursor: pointer;
+   }
+   ${player.info.cover.image} {
+      height: 88px !important; width: 88px !important; 
+      border-radius: 12px !important;
+      z-index: 9;
+      position: relative !important;
+      transition: scale .5s, translateX .6s;
+      transition: transform 0.7s;
+   }
+/*
+   ${player.info.cover.image}:hover {
+      transform: translateX(8px) scale(1.5);
+      border-radius: 2px !important;;
+      /* border: 1px solid #f1f1f126; 
+      z-index: 999999;*/
+   }
+*/
+   ${player.info.cover.is}:active {
+      transform: scale(.9);
+      z-index: 909999900;
+      position: relative !important;
+   }
+
+   ${player.info.cover.image} > div.animate {
+      background-color: var(--vkui--color_background_content);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2;
+      filter: blur(8px);
+      transform: scale(1.5);
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      transform: translate(-35px, -36px) scale(2);
+      /* border: 2px solid red; */
+      animation: sizeBig 10s infinite;
+   }
+   ${player.info.cover.is} svg {
+      width: 58px !important;
+      height: 88px !important;
+      margin-top: 0px !important;
+   }
+
+
+   /*текст*/
+   ${player.info.text.is} {
+      position: absolute !important;
+      top: 18px !important;
+      left: 116px !important;
+      padding: 0 !important;
+   }
+   ${player.info.text.badge} svg {
+      font-size: 20px !important;
+      padding: 0 1px 4px 4px !important;
+      cursor: pointer;
+   }
+
+   ${player.info.text.badge}::before {
+      content: "Explicit Content — трек содержит ненормативную лексику.";
+      position: absolute;
+      top: 0;
+      right: -208px;
+      text-align: left;
+      width: 200px;
+      background: #333;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 8px;
+      padding: 12px 14px;
+      box-sizing: border-box;
+      z-index: 10;
+      transition: all .5s;
+      opacity: 0;
+      transform: translate(-104px, -30px) scale(0);
+      /* background-size: contain; */
+   }
+
+   ${player.info.text.badge}:hover::before {
+      opacity: 1;   
+      transform: translate(0, 0) scale(1);
+   }
+
+   ${player.info.text.title} a {
+      font-size: 14px !important;
+      line-height: normal !important;
+      /*font-weight: 600 !important;*/s   
+   }
+
+   ${player.info.text.artist} {
+      font-size: 14px !important;
+      line-height: normal !important;
+      font-weight: 400 !important;
+   }
+
+
+
+   /*дорога*/
+   ${player.progressbar.is} {
+      height: 8px !important; 
+      margin-bottom: 44px !important;
+      border-radius: 20px !important;
+      margin-bottom: 50px !important;
+      /*width: 93% !important;*/
+   }
+
+   .Slider-module__sliderSizeL--JOS_t .Slider-module__fill--Gxkxh,
+   .AudioPlayerPlaybackProgressBar-module__pending--pZhBg,
+   .Slider-module__sliderSizeL--JOS_t::before {
+      height: 4px !important;
+      border-radius: 30px !important;
+   }
+
+   [data-testid="audioplayerplaybackbody-progresstime"] {
+      position: absolute !important;
+      bottom: 51px !important;
+      right: 20px !important;
+   }

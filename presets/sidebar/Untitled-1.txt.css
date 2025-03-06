@@ -1,0 +1,1303 @@
+:root {
+   --header-height: 48px;
+   /* --left-menu-row-height: 30px; */
+   /* --left-menu-icon-size: 32px !important; */
+
+   --left-menu-icon-size: 28px !important;
+}
+
+.LeftMenuItem-module__counter--VM1_w {
+   flex-shrink: 0;
+   min-width: var(--left-menu-counter-height, 20px);
+   max-width: 50px;
+   padding: 0 6px;
+   box-sizing: border-box;
+   /* background: var(--vkui--color_accent_red); */
+   /* background: var(--vkui--color_text_link); */
+   color: var(--vkui--color_text_contrast);
+   font-family: var(--vkui--font_family_base);
+   font-size: 15px;
+   font-weight: 700;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   line-height: var(--left-menu-counter-height, 20px);
+   border-radius: var(--vkui--size_border_radius_paper--regular);
+   text-align: center;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: block;
+   border: 0;
+   cursor: pointer;
+   margin-left: 4px;
+   line-height: 18px;
+   padding-bottom: 1px;
+   opacity: 0;
+   transition: all 0.8s;
+}
+
+html.bfCuDWpg9_KqODmZ body .side_bar .LeftMenu__itemLink .left_count_wrap,
+html.bfCuDWpg9_KqODmZ
+   body
+   .side_bar
+   .LeftMenu__itemLink
+   [class^="LeftMenuItem-module__counter--"],
+html.bfCuDWpg9_KqODmZ
+   body
+   .side_bar
+   [class^="LeftMenuItem-module__item--"]
+   .left_count_wrap,
+html.bfCuDWpg9_KqODmZ
+   body
+   .side_bar
+   [class^="LeftMenuItem-module__item--"]
+   [class^="LeftMenuItem-module__counter--"],
+html.bfCuDWpg9_KqODmZ body .side_bar li > a .left_count_wrap,
+html.bfCuDWpg9_KqODmZ
+   body
+   .side_bar
+   li
+   > a
+   [class^="LeftMenuItem-module__counter--"] {
+   /* 20px */
+   left: 8px;
+   top: 0px;
+   /* calc(var(--left-menu-icon-size) - 20 * 1px) */
+
+   /* 32px */
+   right: -1px;
+   left: auto;
+   top: 2px;
+}
+
+#side_bar svg {
+   height: var(--left-menu-icon-size) !important;
+   width: var(--left-menu-icon-size) !important;
+}
+
+html.bfCuDWpg9_KqODmZ body .side_bar #side_bar_inner,
+html.bfCuDWpg9_KqODmZ body .side_bar .side_bar_inner {
+   right: 0px !important;
+   width: var(--left-menu-icon-size) !important;
+
+   width: calc(var(--left-menu-icon-size) + 12px) !important;
+   right: calc(var(--left-menu-icon-size) - 20px) !important;
+   /* width: 44px !important; */
+}
+
+[class*="LeftMenuItem-module__item"] {
+   display: flex;
+   align-items: center;
+   height: calc(var(--left-menu-row-height, 40) + 10px);
+   box-sizing: border-box;
+   width: var(--left-menu-item-width, 164px);
+   padding: 4px 6px;
+   border-radius: 4px;
+   cursor: pointer;
+   text-decoration: none;
+   transition: all 0.7s;
+}
+
+[class*="LeftMenuItem-module__icon"] {
+   color: var(--vkui--color_icon_secondary);
+   transition: all 0.8s;
+}
+
+[class*="LeftMenuItem-module__container"]:hover
+   [class*="LeftMenuItem-module__icon"] {
+   color: var(--vkui--color_icon_accent);
+}
+
+[class*="LeftMenuItem-module__container"]:hover
+   [class*="LeftMenuItem-module__counter"] {
+   background: var(--vkui--color_accent_red);
+   opacity: 1;
+}
+
+/* ЗАГРУЗКА */
+.LeftMenuLegacySkeleton__icon {
+   width: var(--left-menu-icon-size);
+   height: var(--left-menu-icon-size);
+   border-radius: 50%;
+   --skeleton-from: var(--vkui--color_skeleton_to);
+}
+
+.LeftMenuLegacySkeleton__item {
+   /* height: 30px; */
+   padding: 4px 6px;
+}
+
+/* НАСТРОЙКА */
+html.Matgh26pUpZRiGMq [class^="LeftMenuItem-module__settings"] {
+   left: -51px !important;
+   /* background: red !important; */
+   padding: 20px 9px !important;
+   width: auto !important;
+}
+
+html.Matgh26pUpZRiGMq [class^="LeftMenuItem-module__settings"] svg {
+   transform: scale(0.8);
+}
+
+.LeftMenuItem-module__container--vaT3i:hover
+   .LeftMenuItem-module__settings--_npqM {
+   opacity: 0.5;
+   transition-delay: var(--vkui--animation_duration_l);
+}
+
+/* .popup_box_container  */
+
+/* data-testid="modalheader-title"  */
+/* Настройка пунктов меню */
+
+/* Название раздела  */
+div[class*="LeftMenuItem-module__label"],
+/* Реклама */
+#ads_left,
+/* Блок навигаций */
+.left_menu_nav_wrap,
+/* Блок рекомендаций */
+div[class*="WideSeparator--legalRecommendationsLink"],
+div[class*="LegalRecommendationsLinkLeft"] {
+   display: none;
+}
+
+/* ============================ */
+/* ============================ */
+/* ============================ */
+
+:root,
+body,
+.vkui--vkBase--dark,
+.vkui--vkBase--light,
+.vkui--vkCom--dark,
+.vkui--vkCom--light,
+.vkui--vkIOS--dark,
+.vkui--vkIOS--light,
+[scheme="space_gray"],
+[scheme="bright_light"] {
+   --accent: #529ef4 !important;
+   --accent--hover: #59a2f4 !important;
+   --accent--active: #60a6f5 !important;
+   --vkui--color_icon_accent: #529ef4 !important;
+   --vkui--color_icon_accent--hover: #59a2f4 !important;
+   --vkui--color_icon_accent--active: #60a6f5 !important;
+   --accent_alternate: #ffffff !important;
+   --accent_alternate--hover: #ebedf0 !important;
+   --accent_alternate--active: #d7d8db !important;
+   --action_sheet_action_foreground: #ffffff !important;
+   --action_sheet_action_foreground--hover: #ebedf0 !important;
+   --action_sheet_action_foreground--active: #d7d8db !important;
+   --action_sheet_separator: #ffffff1f !important;
+   --action_sheet_separator--hover: rgba(255, 255, 255, 0.16) !important;
+   --action_sheet_separator--active: rgba(255, 255, 255, 0.2) !important;
+   --activity_indicator_tint: #5d5f61 !important;
+   --activity_indicator_tint--hover: #636567 !important;
+   --activity_indicator_tint--active: #6a6c6e !important;
+   --attach_picker_tab_active_background: #e1e3e6 !important;
+   --attach_picker_tab_active_background--hover: #e2e4e7 !important;
+   --attach_picker_tab_active_background--active: #e3e5e8 !important;
+   --attach_picker_tab_active_icon: #19191a !important;
+   --attach_picker_tab_active_icon--hover: #222223 !important;
+   --attach_picker_tab_active_icon--active: #2b2b2c !important;
+   --attach_picker_tab_active_text: #e1e3e6 !important;
+   --attach_picker_tab_active_text--hover: #e2e4e7 !important;
+   --attach_picker_tab_active_text--active: #e3e5e8 !important;
+   --attach_picker_tab_inactive_background: #2c2d2e !important;
+   --attach_picker_tab_inactive_background--hover: #343536 !important;
+   --attach_picker_tab_inactive_background--active: #3d3e3f !important;
+   --attach_picker_tab_inactive_icon: #e1e3e6 !important;
+   --attach_picker_tab_inactive_icon--hover: #e2e4e7 !important;
+   --attach_picker_tab_inactive_icon--active: #e3e5e8 !important;
+   --attach_picker_tab_inactive_text: #76787a !important;
+   --attach_picker_tab_inactive_text--hover: #7b7d7f !important;
+   --attach_picker_tab_inactive_text--active: #818385 !important;
+   --background_content: #19191a !important;
+   --background_content--hover: #222223 !important;
+   --background_content--active: #2b2b2c !important;
+   --vkui--color_background_content: #19191a !important;
+   --vkui--color_background_content--hover: #222223 !important;
+   --vkui--color_background_content--active: #2b2b2c !important;
+   --background_highlighted: #ffffff14 !important;
+   --background_highlighted--hover: rgba(255, 255, 255, 0.12) !important;
+   --background_highlighted--active: rgba(255, 255, 255, 0.16) !important;
+   --background_hover: #ffffff0a !important;
+   --background_hover--hover: rgba(255, 255, 255, 0.08) !important;
+   --background_hover--active: rgba(255, 255, 255, 0.12) !important;
+   --background_keyboard: #2c2d2e !important;
+   --background_keyboard--hover: #343536 !important;
+   --background_keyboard--active: #3d3e3f !important;
+   --background_light: #232324 !important;
+   --background_light--hover: #2c2c2d !important;
+   --background_light--active: #353536 !important;
+   --vkui--color_background_tertiary: #232324 !important;
+   --vkui--color_background_tertiary--hover: #2c2c2d !important;
+   --vkui--color_background_tertiary--active: #353536 !important;
+   --background_page: #0a0a0a !important;
+   --background_page--hover: #141414 !important;
+   --background_page--active: #1e1e1e !important;
+   --vkui--color_background: #0a0a0a !important;
+   --vkui--color_background--hover: #141414 !important;
+   --vkui--color_background--active: #1e1e1e !important;
+   --background_suggestions: #2c2d2e !important;
+   --background_suggestions--hover: #343536 !important;
+   --background_suggestions--active: #3d3e3f !important;
+   --vkui--color_background_modal: #19191a !important;
+   --vkui--color_background_modal--hover: #222223 !important;
+   --vkui--color_background_modal--active: #2b2b2c !important;
+   --background_text_highlighted: #71aaeb3d !important;
+   --background_text_highlighted--hover: rgba(113, 170, 235, 0.28) !important;
+   --background_text_highlighted--active: rgba(113, 170, 235, 0.32) !important;
+   --button_bot_shadow: #19191a !important;
+   --button_bot_shadow--hover: #222223 !important;
+   --button_bot_shadow--active: #2b2b2c !important;
+   --button_commerce_background: #4bb34b !important;
+   --button_commerce_background--hover: #52b652 !important;
+   --button_commerce_background--active: #59b959 !important;
+   --vkui--color_text_positive: #4bb34b !important;
+   --vkui--color_text_positive--hover: #52b652 !important;
+   --vkui--color_text_positive--active: #59b959 !important;
+   --button_commerce_foreground: #ffffff !important;
+   --button_commerce_foreground--hover: #ebedf0 !important;
+   --button_commerce_foreground--active: #d7d8db !important;
+   --button_muted_background: #2c2d2e !important;
+   --button_muted_background--hover: #343536 !important;
+   --button_muted_background--active: #3d3e3f !important;
+   --button_muted_foreground: #e1e3e6 !important;
+   --button_muted_foreground--hover: #e2e4e7 !important;
+   --button_muted_foreground--active: #e3e5e8 !important;
+   --button_outline_border: #e1e3e6 !important;
+   --button_outline_border--hover: #e2e4e7 !important;
+   --button_outline_border--active: #e3e5e8 !important;
+   --button_outline_foreground: #e1e3e6 !important;
+   --button_outline_foreground--hover: #e2e4e7 !important;
+   --button_outline_foreground--active: #e3e5e8 !important;
+   --button_primary_background: #e1e3e6 !important;
+   --button_primary_background--hover: #e2e4e7 !important;
+   --button_primary_background--active: #e3e5e8 !important;
+   --button_primary_foreground: #19191a !important;
+   --button_primary_foreground--hover: #222223 !important;
+   --button_primary_foreground--active: #2b2b2c !important;
+   --button_secondary_background: #454647 !important;
+   --button_secondary_background--hover: #4c4d4e !important;
+   --button_secondary_background--active: #545556 !important;
+   --vkui--color_background_secondary_alpha: #454647 !important;
+   --vkui--color_background_secondary_alpha--hover: #4c4d4e !important;
+   --vkui--color_background_secondary_alpha--active: #545556 !important;
+   --button_secondary_background_highlighted: #45464799 !important;
+   --button_secondary_background_highlighted--hover: rgba(
+      69,
+      70,
+      71,
+      0.64
+   ) !important;
+   --button_secondary_background_highlighted--active: rgba(
+      69,
+      70,
+      71,
+      0.68
+   ) !important;
+   --button_secondary_destructive_background: #454647 !important;
+   --button_secondary_destructive_background--hover: #4c4d4e !important;
+   --button_secondary_destructive_background--active: #545556 !important;
+   --button_secondary_destructive_background_highlighted: #45464799 !important;
+   --button_secondary_destructive_background_highlighted--hover: rgba(
+      69,
+      70,
+      71,
+      0.64
+   ) !important;
+   --button_secondary_destructive_background_highlighted--active: rgba(
+      69,
+      70,
+      71,
+      0.68
+   ) !important;
+   --button_secondary_destructive_foreground: #ff5c5c !important;
+   --button_secondary_destructive_foreground--hover: #ff6363 !important;
+   --button_secondary_destructive_foreground--active: #ff6969 !important;
+   --vkui--color_background_negative: #ff5c5c !important;
+   --vkui--color_background_negative--hover: #ff6363 !important;
+   --vkui--color_background_negative--active: #ff6969 !important;
+   --button_secondary_destructive_foreground_highlighted: #ff5c5c99 !important;
+   --button_secondary_destructive_foreground_highlighted--hover: rgba(
+      255,
+      92,
+      92,
+      0.64
+   ) !important;
+   --button_secondary_destructive_foreground_highlighted--active: rgba(
+      255,
+      92,
+      92,
+      0.68
+   ) !important;
+   --button_secondary_foreground: #e1e3e6 !important;
+   --button_secondary_foreground--hover: #e2e4e7 !important;
+   --button_secondary_foreground--active: #e3e5e8 !important;
+   --button_secondary_foreground_highlighted: #e1e3e699 !important;
+   --button_secondary_foreground_highlighted--hover: rgba(
+      225,
+      227,
+      230,
+      0.64
+   ) !important;
+   --button_secondary_foreground_highlighted--active: rgba(
+      225,
+      227,
+      230,
+      0.68
+   ) !important;
+   --button_tertiary_background: #00000000 !important;
+   --button_tertiary_background--hover: rgba(0, 0, 0, 0.04) !important;
+   --button_tertiary_background--active: rgba(0, 0, 0, 0.08) !important;
+   --button_tertiary_foreground: #e1e3e6 !important;
+   --button_tertiary_foreground--hover: #e2e4e7 !important;
+   --button_tertiary_foreground--active: #e3e5e8 !important;
+   --cell_button_foreground: #e1e3e6 !important;
+   --cell_button_foreground--hover: #e2e4e7 !important;
+   --cell_button_foreground--active: #e3e5e8 !important;
+   --content_placeholder_icon: #aaaeb3 !important;
+   --content_placeholder_icon--hover: #adb1b6 !important;
+   --content_placeholder_icon--active: #b1b4b9 !important;
+   --content_placeholder_text: #aaaeb3 !important;
+   --content_placeholder_text--hover: #adb1b6 !important;
+   --content_placeholder_text--active: #b1b4b9 !important;
+   --content_positive_background: #4bb34b26 !important;
+   --content_positive_background--hover: rgba(75, 179, 75, 0.19) !important;
+   --content_positive_background--active: rgba(75, 179, 75, 0.23) !important;
+   --content_tint_background: #232324 !important;
+   --content_tint_background--hover: #2c2c2d !important;
+   --content_tint_background--active: #353536 !important;
+   --vkui--color_background_secondary: #232324 !important;
+   --vkui--color_background_secondary--hover: #2c2c2d !important;
+   --vkui--color_background_secondary--active: #353536 !important;
+   --content_tint_foreground: #909499 !important;
+   --content_tint_foreground--hover: #94989d !important;
+   --content_tint_foreground--active: #999da1 !important;
+   --content_warning_background: #857250 !important;
+   --content_warning_background--hover: #8a7857 !important;
+   --content_warning_background--active: #8f7d5e !important;
+   --vkui--color_background_warning: #857250 !important;
+   --vkui--color_background_warning--hover: #8a7857 !important;
+   --vkui--color_background_warning--active: #8f7d5e !important;
+   --control_background: #454647 !important;
+   --control_background--hover: #4c4d4e !important;
+   --control_background--active: #545556 !important;
+   --control_foreground: #e1e3e6 !important;
+   --control_foreground--hover: #e2e4e7 !important;
+   --control_foreground--active: #e3e5e8 !important;
+   --control_tint: #19191a !important;
+   --control_tint--hover: #222223 !important;
+   --control_tint--active: #2b2b2c !important;
+   --control_tint_muted: #909499 !important;
+   --control_tint_muted--hover: #94989d !important;
+   --control_tint_muted--active: #999da1 !important;
+   --counter_primary_background: #ffffff !important;
+   --counter_primary_background--hover: #ebedf0 !important;
+   --counter_primary_background--active: #d7d8db !important;
+   --counter_primary_text: #19191a !important;
+   --counter_primary_text--hover: #222223 !important;
+   --counter_primary_text--active: #2b2b2c !important;
+   --counter_prominent_background: #ff3347 !important;
+   --counter_prominent_background--hover: #ff3b4e !important;
+   --counter_prominent_background--active: #ff4356 !important;
+   --counter_prominent_text: #ffffff !important;
+   --counter_prominent_text--hover: #ebedf0 !important;
+   --counter_prominent_text--active: #d7d8db !important;
+   --vkui--color_text_contrast: #ffffff !important;
+   --vkui--color_text_contrast--hover: #ebedf0 !important;
+   --vkui--color_text_contrast--active: #d7d8db !important;
+   --counter_secondary_background: #76787a !important;
+   --counter_secondary_background--hover: #7b7d7f !important;
+   --counter_secondary_background--active: #818385 !important;
+   --counter_secondary_text: #19191a !important;
+   --counter_secondary_text--hover: #222223 !important;
+   --counter_secondary_text--active: #2b2b2c !important;
+   --destructive: #ff5c5c !important;
+   --destructive--hover: #ff6363 !important;
+   --destructive--active: #ff6969 !important;
+   --vkui--color_text_negative: #ff5c5c !important;
+   --vkui--color_text_negative--hover: #ff6363 !important;
+   --vkui--color_text_negative--active: #ff6969 !important;
+   --dynamic_blue: #2688eb !important;
+   --dynamic_blue--hover: #2f8dec !important;
+   --dynamic_blue--active: #3792ed !important;
+   --vkui--color_accent_blue: #2688eb !important;
+   --vkui--color_accent_blue--hover: #2f8dec !important;
+   --vkui--color_accent_blue--active: #3792ed !important;
+   --dynamic_gray: #a3adb8 !important;
+   --dynamic_gray--hover: #a7b0bb !important;
+   --dynamic_gray--active: #aab4be !important;
+   --vkui--color_accent_gray: #a3adb8 !important;
+   --vkui--color_accent_gray--hover: #a7b0bb !important;
+   --vkui--color_accent_gray--active: #aab4be !important;
+   --dynamic_green: #4bb34b !important;
+   --dynamic_green--hover: #52b652 !important;
+   --dynamic_green--active: #59b959 !important;
+   --vkui--color_accent_green: #4bb34b !important;
+   --vkui--color_accent_green--hover: #52b652 !important;
+   --vkui--color_accent_green--active: #59b959 !important;
+   --dynamic_orange: #ffa000 !important;
+   --dynamic_orange--hover: #ffa40a !important;
+   --dynamic_orange--active: #ffa814 !important;
+   --vkui--color_accent_orange: #ffa000 !important;
+   --vkui--color_accent_orange--hover: #ffa40a !important;
+   --vkui--color_accent_orange--active: #ffa814 !important;
+   --dynamic_purple: #937ff5 !important;
+   --dynamic_purple--hover: #9784f5 !important;
+   --dynamic_purple--active: #9c89f6 !important;
+   --vkui--color_accent_purple: #937ff5 !important;
+   --vkui--color_accent_purple--hover: #9784f5 !important;
+   --vkui--color_accent_purple--active: #9c89f6 !important;
+   --dynamic_raspberry_pink: #f060c0 !important;
+   --dynamic_raspberry_pink--hover: #f166c3 !important;
+   --dynamic_raspberry_pink--active: #f16dc5 !important;
+   --vkui--color_accent_raspberry_pink: #f060c0 !important;
+   --vkui--color_accent_raspberry_pink--hover: #f166c3 !important;
+   --vkui--color_accent_raspberry_pink--active: #f16dc5 !important;
+   --dynamic_red: #ff3347 !important;
+   --dynamic_red--hover: #ff3b4e !important;
+   --dynamic_red--active: #ff4356 !important;
+   --vkui--color_accent_red: #ff3347 !important;
+   --vkui--color_accent_red--hover: #ff3b4e !important;
+   --vkui--color_accent_red--active: #ff4356 !important;
+   --dynamic_violet: #a393f5 !important;
+   --dynamic_violet--hover: #a797f5 !important;
+   --dynamic_violet--active: #aa9cf6 !important;
+   --vkui--color_accent_violet: #a393f5 !important;
+   --vkui--color_accent_violet--hover: #a797f5 !important;
+   --vkui--color_accent_violet--active: #aa9cf6 !important;
+   --feed_recommended_friend_promo_background: #6d7885 !important;
+   --feed_recommended_friend_promo_background--hover: #737d8a !important;
+   --feed_recommended_friend_promo_background--active: #79838f !important;
+   --field_background: #232324 !important;
+   --field_background--hover: #2c2c2d !important;
+   --field_background--active: #353536 !important;
+   --vkui--color_field_background: #232324 !important;
+   --vkui--color_field_background--hover: #2c2c2d !important;
+   --vkui--color_field_background--active: #353536 !important;
+   --field_border: #ffffff1f !important;
+   --field_border--hover: rgba(255, 255, 255, 0.16) !important;
+   --field_border--active: rgba(255, 255, 255, 0.2) !important;
+   --vkui--color_field_border_alpha: #ffffff1f !important;
+   --vkui--color_field_border_alpha--hover: rgba(
+      255,
+      255,
+      255,
+      0.16
+   ) !important;
+   --vkui--color_field_border_alpha--active: rgba(
+      255,
+      255,
+      255,
+      0.2
+   ) !important;
+   --field_error_background: #522e2e !important;
+   --field_error_background--hover: #593636 !important;
+   --field_error_background--active: #603f3f !important;
+   --vkui--color_background_negative_tint: #522e2e !important;
+   --vkui--color_background_negative_tint--hover: #593636 !important;
+   --vkui--color_background_negative_tint--active: #603f3f !important;
+   --field_error_border: #ff5c5c !important;
+   --field_error_border--hover: #ff6363 !important;
+   --field_error_border--active: #ff6969 !important;
+   --vkui--color_stroke_negative: #ff5c5c !important;
+   --vkui--color_stroke_negative--hover: #ff6363 !important;
+   --vkui--color_stroke_negative--active: #ff6969 !important;
+   --field_text_placeholder: #76787a !important;
+   --field_text_placeholder--hover: #7b7d7f !important;
+   --field_text_placeholder--active: #818385 !important;
+   --field_valid_border: #4bb34b !important;
+   --field_valid_border--hover: #52b652 !important;
+   --field_valid_border--active: #59b959 !important;
+   --vkui--color_stroke_positive: #4bb34b !important;
+   --vkui--color_stroke_positive--hover: #52b652 !important;
+   --vkui--color_stroke_positive--active: #59b959 !important;
+   --float_button_background: #454647 !important;
+   --float_button_background--hover: #4c4d4e !important;
+   --float_button_background--active: #545556 !important;
+   --float_button_background_highlighted: #5d5f61 !important;
+   --float_button_background_highlighted--hover: #636567 !important;
+   --float_button_background_highlighted--active: #6a6c6e !important;
+   --float_button_border: #0000001f !important;
+   --float_button_border--hover: rgba(0, 0, 0, 0.16) !important;
+   --float_button_border--active: rgba(0, 0, 0, 0.2) !important;
+   --float_button_foreground: #aaaeb3 !important;
+   --float_button_foreground--hover: #adb1b6 !important;
+   --float_button_foreground--active: #b1b4b9 !important;
+   --header_alternate_background: #2c2d2e !important;
+   --header_alternate_background--hover: #343536 !important;
+   --header_alternate_background--active: #3d3e3f !important;
+   --header_alternate_tab_active_indicator: #e1e3e6 !important;
+   --header_alternate_tab_active_indicator--hover: #e2e4e7 !important;
+   --header_alternate_tab_active_indicator--active: #e3e5e8 !important;
+   --header_alternate_tab_active_text: #e1e3e6 !important;
+   --header_alternate_tab_active_text--hover: #e2e4e7 !important;
+   --header_alternate_tab_active_text--active: #e3e5e8 !important;
+   --header_alternate_tab_inactive_text: #76787a !important;
+   --header_alternate_tab_inactive_text--hover: #7b7d7f !important;
+   --header_alternate_tab_inactive_text--active: #818385 !important;
+   --header_background: #19191a !important;
+   --header_background--hover: #222223 !important;
+   --header_background--active: #2b2b2c !important;
+   --vkui--color_header_background: #19191a !important;
+   --vkui--color_header_background--hover: #222223 !important;
+   --vkui--color_header_background--active: #2b2b2c !important;
+   --header_background_before_blur: #070708 !important;
+   --header_background_before_blur--hover: #111112 !important;
+   --header_background_before_blur--active: #1b1b1c !important;
+   --header_background_before_blur_alternate: #070708 !important;
+   --header_background_before_blur_alternate--hover: #111112 !important;
+   --header_background_before_blur_alternate--active: #1b1b1c !important;
+   --header_search_field_background: #363738 !important;
+   --header_search_field_background--hover: #3e3f40 !important;
+   --header_search_field_background--active: #464748 !important;
+   --header_search_field_tint: #aaaeb3 !important;
+   --header_search_field_tint--hover: #adb1b6 !important;
+   --header_search_field_tint--active: #b1b4b9 !important;
+   --header_tab_active_background: #5d5f61 !important;
+   --header_tab_active_background--hover: #636567 !important;
+   --header_tab_active_background--active: #6a6c6e !important;
+   --header_tab_active_indicator: #71aaeb !important;
+   --header_tab_active_indicator--hover: #77adec !important;
+   --header_tab_active_indicator--active: #7cb1ed !important;
+   --header_tab_active_text: #e1e3e6 !important;
+   --header_tab_active_text--hover: #e2e4e7 !important;
+   --header_tab_active_text--active: #e3e5e8 !important;
+   --header_tab_inactive_text: #76787a !important;
+   --header_tab_inactive_text--hover: #7b7d7f !important;
+   --header_tab_inactive_text--active: #818385 !important;
+   --header_text: #e1e3e6 !important;
+   --header_text--hover: #e2e4e7 !important;
+   --header_text--active: #e3e5e8 !important;
+   --header_text_alternate: #e1e3e6 !important;
+   --header_text_alternate--hover: #e2e4e7 !important;
+   --header_text_alternate--active: #e3e5e8 !important;
+   --header_text_secondary: #ffffff99 !important;
+   --header_text_secondary--hover: rgba(255, 255, 255, 0.64) !important;
+   --header_text_secondary--active: rgba(255, 255, 255, 0.68) !important;
+   --header_tint: #e1e3e6 !important;
+   --header_tint--hover: #e2e4e7 !important;
+   --header_tint--active: #e3e5e8 !important;
+   --header_tint_alternate: #e1e3e6 !important;
+   --header_tint_alternate--hover: #e2e4e7 !important;
+   --header_tint_alternate--active: #e3e5e8 !important;
+   --vkui--color_icon_accent_themed: #e1e3e6 !important;
+   --vkui--color_icon_accent_themed--hover: #e2e4e7 !important;
+   --vkui--color_icon_accent_themed--active: #e3e5e8 !important;
+   --icon_alpha_placeholder: #e1e3e6 !important;
+   --icon_alpha_placeholder--hover: #e2e4e7 !important;
+   --icon_alpha_placeholder--active: #e3e5e8 !important;
+   --vkui--color_icon_contrast: #e1e3e6 !important;
+   --vkui--color_icon_contrast--hover: #e2e4e7 !important;
+   --vkui--color_icon_contrast--active: #e3e5e8 !important;
+   --icon_medium: #909499 !important;
+   --icon_medium--hover: #94989d !important;
+   --icon_medium--active: #999da1 !important;
+   --vkui--color_icon_medium: #909499 !important;
+   --vkui--color_icon_medium--hover: #94989d !important;
+   --vkui--color_icon_medium--active: #999da1 !important;
+   --icon_medium_alpha: #ffffff7a !important;
+   --icon_medium_alpha--hover: rgba(255, 255, 255, 0.52) !important;
+   --icon_medium_alpha--active: rgba(255, 255, 255, 0.56) !important;
+   --vkui--color_icon_medium_alpha: #ffffff7a !important;
+   --vkui--color_icon_medium_alpha--hover: rgba(255, 255, 255, 0.52) !important;
+   --vkui--color_icon_medium_alpha--active: rgba(
+      255,
+      255,
+      255,
+      0.56
+   ) !important;
+   --icon_name: #aaaeb3 !important;
+   --icon_name--hover: #adb1b6 !important;
+   --icon_name--active: #b1b4b9 !important;
+   --icon_outline_medium: #abaeb3 !important;
+   --icon_outline_medium--hover: #aeb1b6 !important;
+   --icon_outline_medium--active: #b2b4b9 !important;
+   --icon_outline_secondary: #909499 !important;
+   --icon_outline_secondary--hover: #94989d !important;
+   --icon_outline_secondary--active: #999da1 !important;
+   --icon_secondary: #76787a !important;
+   --icon_secondary--hover: #7b7d7f !important;
+   --icon_secondary--active: #818385 !important;
+   --vkui--color_icon_secondary: #76787a !important;
+   --vkui--color_icon_secondary--hover: #7b7d7f !important;
+   --vkui--color_icon_secondary--active: #818385 !important;
+   --icon_secondary_alpha: #ffffff5c !important;
+   --icon_secondary_alpha--hover: rgba(255, 255, 255, 0.4) !important;
+   --icon_secondary_alpha--active: rgba(255, 255, 255, 0.44) !important;
+   --vkui--color_icon_secondary_alpha: #ffffff5c !important;
+   --vkui--color_icon_secondary_alpha--hover: rgba(
+      255,
+      255,
+      255,
+      0.4
+   ) !important;
+   --vkui--color_icon_secondary_alpha--active: rgba(
+      255,
+      255,
+      255,
+      0.44
+   ) !important;
+   --icon_tertiary: #5d5f61 !important;
+   --icon_tertiary--hover: #636567 !important;
+   --icon_tertiary--active: #6a6c6e !important;
+   --vkui--color_icon_tertiary: #5d5f61 !important;
+   --vkui--color_icon_tertiary--hover: #636567 !important;
+   --vkui--color_icon_tertiary--active: #6a6c6e !important;
+   --icon_tertiary_alpha: #ffffff3d !important;
+   --icon_tertiary_alpha--hover: rgba(255, 255, 255, 0.28) !important;
+   --icon_tertiary_alpha--active: rgba(255, 255, 255, 0.32) !important;
+   --vkui--color_icon_tertiary_alpha: #ffffff3d !important;
+   --vkui--color_icon_tertiary_alpha--hover: rgba(
+      255,
+      255,
+      255,
+      0.28
+   ) !important;
+   --vkui--color_icon_tertiary_alpha--active: rgba(
+      255,
+      255,
+      255,
+      0.32
+   ) !important;
+   --im_attach_tint: #ffffff !important;
+   --im_attach_tint--hover: #ebedf0 !important;
+   --im_attach_tint--active: #d7d8db !important;
+   --im_bubble_border_alternate: #00000000 !important;
+   --im_bubble_border_alternate--hover: rgba(0, 0, 0, 0.04) !important;
+   --im_bubble_border_alternate--active: rgba(0, 0, 0, 0.08) !important;
+   --im_bubble_border_alternate_highlighted: #00000000 !important;
+   --im_bubble_border_alternate_highlighted--hover: rgba(
+      0,
+      0,
+      0,
+      0.04
+   ) !important;
+   --im_bubble_border_alternate_highlighted--active: rgba(
+      0,
+      0,
+      0,
+      0.08
+   ) !important;
+   --vkui--vkontakte_color_im_bubble_border_alternate_highlighted_alpha: #00000000 !important;
+   --vkui--vkontakte_color_im_bubble_border_alternate_highlighted_alpha--hover: rgba(
+      0,
+      0,
+      0,
+      0.04
+   ) !important;
+   --vkui--vkontakte_color_im_bubble_border_alternate_highlighted_alpha--active: rgba(
+      0,
+      0,
+      0,
+      0.08
+   ) !important;
+   --im_bubble_button_background: #ffffff29 !important;
+   --im_bubble_button_background--hover: rgba(255, 255, 255, 0.2) !important;
+   --im_bubble_button_background--active: rgba(255, 255, 255, 0.24) !important;
+   --im_bubble_button_background_highlighted: #ffffff3d !important;
+   --im_bubble_button_background_highlighted--hover: rgba(
+      255,
+      255,
+      255,
+      0.28
+   ) !important;
+   --im_bubble_button_background_highlighted--active: rgba(
+      255,
+      255,
+      255,
+      0.32
+   ) !important;
+   --im_bubble_button_foreground: #e1e3e6 !important;
+   --im_bubble_button_foreground--hover: #e2e4e7 !important;
+   --im_bubble_button_foreground--active: #e3e5e8 !important;
+   --im_bubble_button_outgoing_background: #ffffff33 !important;
+   --im_bubble_button_outgoing_background--hover: rgba(
+      255,
+      255,
+      255,
+      0.24
+   ) !important;
+   --im_bubble_button_outgoing_background--active: rgba(
+      255,
+      255,
+      255,
+      0.28
+   ) !important;
+   --im_bubble_gift_background: #2c2d2e !important;
+   --im_bubble_gift_background--hover: #343536 !important;
+   --im_bubble_gift_background--active: #3d3e3f !important;
+   --im_bubble_gift_background_highlighted: #ab9871 !important;
+   --im_bubble_gift_background_highlighted--hover: #ae9c77 !important;
+   --im_bubble_gift_background_highlighted--active: #b2a07c !important;
+   --im_bubble_gift_text: #ffffff !important;
+   --im_bubble_gift_text--hover: #ebedf0 !important;
+   --im_bubble_gift_text--active: #d7d8db !important;
+   --im_bubble_gift_text_secondary: #e3d3ac !important;
+   --im_bubble_gift_text_secondary--hover: #e4d5af !important;
+   --im_bubble_gift_text_secondary--active: #e5d7b3 !important;
+   --im_bubble_incoming: #2c2d2e !important;
+   --im_bubble_incoming--hover: #343536 !important;
+   --im_bubble_incoming--active: #3d3e3f !important;
+   --vkui--vkontakte_color_im_bubble_incoming: #2c2d2e !important;
+   --vkui--vkontakte_color_im_bubble_incoming--hover: #343536 !important;
+   --vkui--vkontakte_color_im_bubble_incoming--active: #3d3e3f !important;
+   --im_bubble_incoming_alternate: #2c2d2e !important;
+   --im_bubble_incoming_alternate--hover: #343536 !important;
+   --im_bubble_incoming_alternate--active: #3d3e3f !important;
+   --vkui--vkontakte_color_im_bubble_incoming_alternate: #2c2d2e !important;
+   --vkui--vkontakte_color_im_bubble_incoming_alternate--hover: #343536 !important;
+   --vkui--vkontakte_color_im_bubble_incoming_alternate--active: #3d3e3f !important;
+   --im_bubble_incoming_alternate_highlighted: #5d5f61 !important;
+   --im_bubble_incoming_alternate_highlighted--hover: #636567 !important;
+   --im_bubble_incoming_alternate_highlighted--active: #6a6c6e !important;
+   --im_bubble_incoming_expiring: #262b4d !important;
+   --im_bubble_incoming_expiring--hover: #2f3354 !important;
+   --im_bubble_incoming_expiring--active: #373c5b !important;
+   --vkui--vkontakte_color_im_bubble_incoming_expiring: #262b4d !important;
+   --vkui--vkontakte_color_im_bubble_incoming_expiring--hover: #2f3354 !important;
+   --vkui--vkontakte_color_im_bubble_incoming_expiring--active: #373c5b !important;
+   --im_bubble_incoming_expiring_highlighted: #404980 !important;
+   --im_bubble_incoming_expiring_highlighted--hover: #485085 !important;
+   --im_bubble_incoming_expiring_highlighted--active: #4f588a !important;
+   --im_bubble_incoming_highlighted: #5d5f61 !important;
+   --im_bubble_incoming_highlighted--hover: #636567 !important;
+   --im_bubble_incoming_highlighted--active: #6a6c6e !important;
+   --im_bubble_outgoing: #454647 !important;
+   --im_bubble_outgoing--hover: #4c4d4e !important;
+   --im_bubble_outgoing--active: #545556 !important;
+   --im_bubble_outgoing_alternate: #454647 !important;
+   --im_bubble_outgoing_alternate--hover: #4c4d4e !important;
+   --im_bubble_outgoing_alternate--active: #545556 !important;
+   --im_bubble_outgoing_alternate_highlighted: #76787a !important;
+   --im_bubble_outgoing_alternate_highlighted--hover: #7b7d7f !important;
+   --im_bubble_outgoing_alternate_highlighted--active: #818385 !important;
+   --im_bubble_outgoing_expiring: #404980 !important;
+   --im_bubble_outgoing_expiring--hover: #485085 !important;
+   --im_bubble_outgoing_expiring--active: #4f588a !important;
+   --im_bubble_outgoing_expiring_highlighted: #5965b3 !important;
+   --im_bubble_outgoing_expiring_highlighted--hover: #606bb6 !important;
+   --im_bubble_outgoing_expiring_highlighted--active: #6671b9 !important;
+   --im_bubble_outgoing_highlighted: #5d5f61 !important;
+   --im_bubble_outgoing_highlighted--hover: #636567 !important;
+   --im_bubble_outgoing_highlighted--active: #6a6c6e !important;
+   --im_bubble_wallpaper_button_background: #454647 !important;
+   --im_bubble_wallpaper_button_background--hover: #4c4d4e !important;
+   --im_bubble_wallpaper_button_background--active: #545556 !important;
+   --im_bubble_wallpaper_button_background_highlighted: #76787a !important;
+   --im_bubble_wallpaper_button_background_highlighted--hover: #7b7d7f !important;
+   --im_bubble_wallpaper_button_background_highlighted--active: #818385 !important;
+   --im_bubble_wallpaper_button_foreground: #e1e3e6 !important;
+   --im_bubble_wallpaper_button_foreground--hover: #e2e4e7 !important;
+   --im_bubble_wallpaper_button_foreground--active: #e3e5e8 !important;
+   --im_bubble_wallpaper_incoming: #2c2d2e !important;
+   --im_bubble_wallpaper_incoming--hover: #343536 !important;
+   --im_bubble_wallpaper_incoming--active: #3d3e3f !important;
+   --im_bubble_wallpaper_incoming_highlighted: #5d5f61 !important;
+   --im_bubble_wallpaper_incoming_highlighted--hover: #636567 !important;
+   --im_bubble_wallpaper_incoming_highlighted--active: #6a6c6e !important;
+   --im_bubble_wallpaper_outgoing: #454647 !important;
+   --im_bubble_wallpaper_outgoing--hover: #4c4d4e !important;
+   --im_bubble_wallpaper_outgoing--active: #545556 !important;
+   --im_bubble_wallpaper_outgoing_highlighted: #5d5f61 !important;
+   --im_bubble_wallpaper_outgoing_highlighted--hover: #636567 !important;
+   --im_bubble_wallpaper_outgoing_highlighted--active: #6a6c6e !important;
+   --im_forward_line_tint: #ffffff3d !important;
+   --im_forward_line_tint--hover: rgba(255, 255, 255, 0.28) !important;
+   --im_forward_line_tint--active: rgba(255, 255, 255, 0.32) !important;
+   --vkui--vkontakte_color_im_forward_line_alpha: #ffffff3d !important;
+   --vkui--vkontakte_color_im_forward_line_alpha--hover: rgba(
+      255,
+      255,
+      255,
+      0.28
+   ) !important;
+   --vkui--vkontakte_color_im_forward_line_alpha--active: rgba(
+      255,
+      255,
+      255,
+      0.32
+   ) !important;
+   --im_reply_separator: #ffffff !important;
+   --im_reply_separator--hover: #ebedf0 !important;
+   --im_reply_separator--active: #d7d8db !important;
+   --im_service_message_text: #76787a !important;
+   --im_service_message_text--hover: #7b7d7f !important;
+   --im_service_message_text--active: #818385 !important;
+   --im_text_name: #71aaeb !important;
+   --im_text_name--hover: #77adec !important;
+   --im_text_name--active: #7cb1ed !important;
+   --im_toolbar_separator: #aaaeb3 !important;
+   --im_toolbar_separator--hover: #adb1b6 !important;
+   --im_toolbar_separator--active: #b1b4b9 !important;
+   --im_toolbar_voice_msg_background: #454647 !important;
+   --im_toolbar_voice_msg_background--hover: #4c4d4e !important;
+   --im_toolbar_voice_msg_background--active: #545556 !important;
+   --image_border: #ffffff14 !important;
+   --image_border--hover: rgba(255, 255, 255, 0.12) !important;
+   --image_border--active: rgba(255, 255, 255, 0.16) !important;
+   --vkui--color_image_border_alpha: #ffffff14 !important;
+   --vkui--color_image_border_alpha--hover: rgba(
+      255,
+      255,
+      255,
+      0.12
+   ) !important;
+   --vkui--color_image_border_alpha--active: rgba(
+      255,
+      255,
+      255,
+      0.16
+   ) !important;
+   --input_background: #2c2d2e !important;
+   --input_background--hover: #343536 !important;
+   --input_background--active: #3d3e3f !important;
+   --vkui--color_write_bar_input_background: #2c2d2e !important;
+   --vkui--color_write_bar_input_background--hover: #343536 !important;
+   --vkui--color_write_bar_input_background--active: #3d3e3f !important;
+   --input_border: #2c2d2e !important;
+   --input_border--hover: #343536 !important;
+   --input_border--active: #3d3e3f !important;
+   --vkui--color_write_bar_input_border_alpha: #2c2d2e !important;
+   --vkui--color_write_bar_input_border_alpha--hover: #343536 !important;
+   --vkui--color_write_bar_input_border_alpha--active: #3d3e3f !important;
+   --landing_background: #19191a !important;
+   --landing_background--hover: #222223 !important;
+   --landing_background--active: #2b2b2c !important;
+   --landing_field_background: #232324 !important;
+   --landing_field_background--hover: #2c2c2d !important;
+   --landing_field_background--active: #353536 !important;
+   --landing_field_border: #00000000 !important;
+   --landing_field_border--hover: rgba(0, 0, 0, 0.04) !important;
+   --landing_field_border--active: rgba(0, 0, 0, 0.08) !important;
+   --landing_field_placeholder: #aaaeb3 !important;
+   --landing_field_placeholder--hover: #adb1b6 !important;
+   --landing_field_placeholder--active: #b1b4b9 !important;
+   --landing_login_button_background: #e1e3e6 !important;
+   --landing_login_button_background--hover: #e2e4e7 !important;
+   --landing_login_button_background--active: #e3e5e8 !important;
+   --landing_login_button_foreground: #19191a !important;
+   --landing_login_button_foreground--hover: #222223 !important;
+   --landing_login_button_foreground--active: #2b2b2c !important;
+   --landing_primary_button_background: #e1e3e6 !important;
+   --landing_primary_button_background--hover: #e2e4e7 !important;
+   --landing_primary_button_background--active: #e3e5e8 !important;
+   --landing_primary_button_foreground: #19191a !important;
+   --landing_primary_button_foreground--hover: #222223 !important;
+   --landing_primary_button_foreground--active: #2b2b2c !important;
+   --landing_secondary_button_background: #ffffff26 !important;
+   --landing_secondary_button_background--hover: rgba(
+      255,
+      255,
+      255,
+      0.19
+   ) !important;
+   --landing_secondary_button_background--active: rgba(
+      255,
+      255,
+      255,
+      0.23
+   ) !important;
+   --landing_secondary_button_foreground: #ffffff !important;
+   --landing_secondary_button_foreground--hover: #ebedf0 !important;
+   --landing_secondary_button_foreground--active: #d7d8db !important;
+   --landing_snippet_border: #ffffff26 !important;
+   --landing_snippet_border--hover: rgba(255, 255, 255, 0.19) !important;
+   --landing_snippet_border--active: rgba(255, 255, 255, 0.23) !important;
+   --landing_tertiary_button_background: #00000000 !important;
+   --landing_tertiary_button_background--hover: rgba(0, 0, 0, 0.04) !important;
+   --landing_tertiary_button_background--active: rgba(0, 0, 0, 0.08) !important;
+   --landing_tertiary_button_foreground: #ffffff !important;
+   --landing_tertiary_button_foreground--hover: #ebedf0 !important;
+   --landing_tertiary_button_foreground--active: #d7d8db !important;
+   --landing_text_primary: #e1e3e6 !important;
+   --landing_text_primary--hover: #e2e4e7 !important;
+   --landing_text_primary--active: #e3e5e8 !important;
+   --landing_text_secondary: #76787a !important;
+   --landing_text_secondary--hover: #7b7d7f !important;
+   --landing_text_secondary--active: #818385 !important;
+   --landing_text_title: #ffffff !important;
+   --landing_text_title--hover: #ebedf0 !important;
+   --landing_text_title--active: #d7d8db !important;
+   --like_text_tint: #ff5c5c !important;
+   --like_text_tint--hover: #ff6363 !important;
+   --like_text_tint--active: #ff6969 !important;
+   --link_alternate: #ffffff !important;
+   --link_alternate--hover: #ebedf0 !important;
+   --link_alternate--active: #d7d8db !important;
+   --vkui--color_text_link_themed: #ffffff !important;
+   --vkui--color_text_link_themed--hover: #ebedf0 !important;
+   --vkui--color_text_link_themed--active: #d7d8db !important;
+   --loader_background: #2c2d2e !important;
+   --loader_background--hover: #343536 !important;
+   --loader_background--active: #3d3e3f !important;
+   --loader_tint: #76787a !important;
+   --loader_tint--hover: #7b7d7f !important;
+   --loader_tint--active: #818385 !important;
+   --loader_track_fill: #454647 !important;
+   --loader_track_fill--hover: #4c4d4e !important;
+   --loader_track_fill--active: #545556 !important;
+   --vkui--color_track_background: #454647 !important;
+   --vkui--color_track_background--hover: #4c4d4e !important;
+   --vkui--color_track_background--active: #545556 !important;
+   --loader_track_value_fill: #ffffff !important;
+   --loader_track_value_fill--hover: #ebedf0 !important;
+   --loader_track_value_fill--active: #d7d8db !important;
+   --vkui--color_track_buffer: #ffffff !important;
+   --vkui--color_track_buffer--hover: #ebedf0 !important;
+   --vkui--color_track_buffer--active: #d7d8db !important;
+   --media_overlay_button_background: #ffffff !important;
+   --media_overlay_button_background--hover: #ebedf0 !important;
+   --media_overlay_button_background--active: #d7d8db !important;
+   --media_overlay_button_foreground: #2c2d2e !important;
+   --media_overlay_button_foreground--hover: #343536 !important;
+   --media_overlay_button_foreground--active: #3d3e3f !important;
+   --modal_card_background: #232324 !important;
+   --modal_card_background--hover: #2c2c2d !important;
+   --modal_card_background--active: #353536 !important;
+   --modal_card_border: #ffffff1f !important;
+   --modal_card_border--hover: rgba(255, 255, 255, 0.16) !important;
+   --modal_card_border--active: rgba(255, 255, 255, 0.2) !important;
+   --modal_card_header_close: #ffffff !important;
+   --modal_card_header_close--hover: #ebedf0 !important;
+   --modal_card_header_close--active: #d7d8db !important;
+   --music_playback_icon: #ffffff !important;
+   --music_playback_icon--hover: #ebedf0 !important;
+   --music_playback_icon--active: #d7d8db !important;
+   --overlay_status_background: #19191a !important;
+   --overlay_status_background--hover: #222223 !important;
+   --overlay_status_background--active: #2b2b2c !important;
+   --overlay_status_foreground: #e1e3e6 !important;
+   --overlay_status_foreground--hover: #e2e4e7 !important;
+   --overlay_status_foreground--active: #e3e5e8 !important;
+   --overlay_status_icon: #ebedf0 !important;
+   --overlay_status_icon--hover: #eceef1 !important;
+   --overlay_status_icon--active: #edeef1 !important;
+   --panel_tab_active_background: #454647 !important;
+   --panel_tab_active_background--hover: #4c4d4e !important;
+   --panel_tab_active_background--active: #545556 !important;
+   --panel_tab_active_text: #e1e3e6 !important;
+   --panel_tab_active_text--hover: #e2e4e7 !important;
+   --panel_tab_active_text--active: #e3e5e8 !important;
+   --panel_tab_inactive_text: #76787a !important;
+   --panel_tab_inactive_text--hover: #7b7d7f !important;
+   --panel_tab_inactive_text--active: #818385 !important;
+   --placeholder_icon_background: #ffffff14 !important;
+   --placeholder_icon_background--hover: rgba(255, 255, 255, 0.12) !important;
+   --placeholder_icon_background--active: rgba(255, 255, 255, 0.16) !important;
+   --vkui--color_image_placeholder: #ffffff14 !important;
+   --vkui--color_image_placeholder--hover: rgba(255, 255, 255, 0.12) !important;
+   --vkui--color_image_placeholder--active: rgba(
+      255,
+      255,
+      255,
+      0.16
+   ) !important;
+   --placeholder_icon_background_opaque: #232324 !important;
+   --placeholder_icon_background_opaque--hover: #2c2c2d !important;
+   --placeholder_icon_background_opaque--active: #353536 !important;
+   --vkui--color_image_placeholder_alpha: #232324 !important;
+   --vkui--color_image_placeholder_alpha--hover: #2c2c2d !important;
+   --vkui--color_image_placeholder_alpha--active: #353536 !important;
+   --placeholder_icon_foreground_primary: #909499 !important;
+   --placeholder_icon_foreground_primary--hover: #94989d !important;
+   --placeholder_icon_foreground_primary--active: #999da1 !important;
+   --placeholder_icon_foreground_secondary: #5d5f61 !important;
+   --placeholder_icon_foreground_secondary--hover: #636567 !important;
+   --placeholder_icon_foreground_secondary--active: #6a6c6e !important;
+   --placeholder_icon_tint: #ffffff !important;
+   --placeholder_icon_tint--hover: #ebedf0 !important;
+   --placeholder_icon_tint--active: #d7d8db !important;
+   --poll_option_background: #ffffff !important;
+   --poll_option_background--hover: #ebedf0 !important;
+   --poll_option_background--active: #d7d8db !important;
+   --primary_overlay_badge: #ffffff66 !important;
+   --primary_overlay_badge--hover: rgba(255, 255, 255, 0.44) !important;
+   --primary_overlay_badge--active: rgba(255, 255, 255, 0.48) !important;
+   --search_bar_background: #19191a !important;
+   --search_bar_background--hover: #222223 !important;
+   --search_bar_background--active: #2b2b2c !important;
+   --search_bar_field_background: #363738 !important;
+   --search_bar_field_background--hover: #3e3f40 !important;
+   --search_bar_field_background--active: #464748 !important;
+   --vkui--color_search_field_background: #363738 !important;
+   --vkui--color_search_field_background--hover: #3e3f40 !important;
+   --vkui--color_search_field_background--active: #464748 !important;
+   --search_bar_field_tint: #aaaeb3 !important;
+   --search_bar_field_tint--hover: #adb1b6 !important;
+   --search_bar_field_tint--active: #b1b4b9 !important;
+   --search_bar_segmented_control_tint: #909499 !important;
+   --search_bar_segmented_control_tint--hover: #94989d !important;
+   --search_bar_segmented_control_tint--active: #999da1 !important;
+   --secondary_overlay_badge: #ffffff26 !important;
+   --secondary_overlay_badge--hover: rgba(255, 255, 255, 0.19) !important;
+   --secondary_overlay_badge--active: rgba(255, 255, 255, 0.23) !important;
+   --segmented_control_bar_background: #19191a !important;
+   --segmented_control_bar_background--hover: #222223 !important;
+   --segmented_control_bar_background--active: #2b2b2c !important;
+   --vkui--color_segmented_control: #19191a !important;
+   --vkui--color_segmented_control--hover: #222223 !important;
+   --vkui--color_segmented_control--active: #2b2b2c !important;
+   --segmented_control_tint: #76787a !important;
+   --segmented_control_tint--hover: #7b7d7f !important;
+   --segmented_control_tint--active: #818385 !important;
+   --selection_off_icon: #5c5e60 !important;
+   --selection_off_icon--hover: #636466 !important;
+   --selection_off_icon--active: #696b6d !important;
+   --separator_alpha: #ffffff1f !important;
+   --separator_alpha--hover: rgba(255, 255, 255, 0.16) !important;
+   --separator_alpha--active: rgba(255, 255, 255, 0.2) !important;
+   --vkui--color_separator_primary_alpha: #ffffff1f !important;
+   --vkui--color_separator_primary_alpha--hover: rgba(
+      255,
+      255,
+      255,
+      0.16
+   ) !important;
+   --vkui--color_separator_primary_alpha--active: rgba(
+      255,
+      255,
+      255,
+      0.2
+   ) !important;
+   --separator_alternate: #232324 !important;
+   --separator_alternate--hover: #2c2c2d !important;
+   --separator_alternate--active: #353536 !important;
+   --vkui--color_separator_secondary: #232324 !important;
+   --vkui--color_separator_secondary--hover: #2c2c2d !important;
+   --vkui--color_separator_secondary--active: #353536 !important;
+   --separator_common: #363738 !important;
+   --separator_common--hover: #3e3f40 !important;
+   --separator_common--active: #464748 !important;
+   --vkui--color_separator_primary: #363738 !important;
+   --vkui--color_separator_primary--hover: #3e3f40 !important;
+   --vkui--color_separator_primary--active: #464748 !important;
+   --skeleton_foreground_from: #232324 !important;
+   --skeleton_foreground_from--hover: #2c2c2d !important;
+   --skeleton_foreground_from--active: #353536 !important;
+   --vkui--color_skeleton_from: #232324 !important;
+   --vkui--color_skeleton_from--hover: #2c2c2d !important;
+   --vkui--color_skeleton_from--active: #353536 !important;
+   --skeleton_foreground_to: #2c2d2e !important;
+   --skeleton_foreground_to--hover: #343536 !important;
+   --skeleton_foreground_to--active: #3d3e3f !important;
+   --vkui--color_skeleton_to: #2c2d2e !important;
+   --vkui--color_skeleton_to--hover: #343536 !important;
+   --vkui--color_skeleton_to--active: #3d3e3f !important;
+   --skeleton_shimmer_from: #19191a !important;
+   --skeleton_shimmer_from--hover: #222223 !important;
+   --skeleton_shimmer_from--active: #2b2b2c !important;
+   --skeleton_shimmer_to: #19191a !important;
+   --skeleton_shimmer_to--hover: #222223 !important;
+   --skeleton_shimmer_to--active: #2b2b2c !important;
+   --snippet_background: #232324 !important;
+   --snippet_background--hover: #2c2c2d !important;
+   --snippet_background--active: #353536 !important;
+   --snippet_border: #ffffff26 !important;
+   --snippet_border--hover: rgba(255, 255, 255, 0.19) !important;
+   --snippet_border--active: rgba(255, 255, 255, 0.23) !important;
+   --snippet_icon_tertiary: #5d5f61 !important;
+   --snippet_icon_tertiary--hover: #636567 !important;
+   --snippet_icon_tertiary--active: #6a6c6e !important;
+   --splashscreen_icon: #2c2d2e !important;
+   --splashscreen_icon--hover: #343536 !important;
+   --splashscreen_icon--active: #3d3e3f !important;
+   --statusbar_alternate_legacy_background: #00000000 !important;
+   --statusbar_alternate_legacy_background--hover: rgba(
+      0,
+      0,
+      0,
+      0.04
+   ) !important;
+   --statusbar_alternate_legacy_background--active: rgba(
+      0,
+      0,
+      0,
+      0.08
+   ) !important;
+   --stories_create_button_background_from: #363738 !important;
+   --stories_create_button_background_from--hover: #3e3f40 !important;
+   --stories_create_button_background_from--active: #464748 !important;
+   --stories_create_button_background_to: #363738 !important;
+   --stories_create_button_background_to--hover: #3e3f40 !important;
+   --stories_create_button_background_to--active: #464748 !important;
+   --stories_create_button_foreground: #c4c8cc !important;
+   --stories_create_button_foreground--hover: #c6cace !important;
+   --stories_create_button_foreground--active: #c9ccd0 !important;
+   --stories_create_button_icon_background: #454647 !important;
+   --stories_create_button_icon_background--hover: #4c4d4e !important;
+   --stories_create_button_icon_background--active: #545556 !important;
+   --stories_skeleton_loader_background: #454647 !important;
+   --stories_skeleton_loader_background--hover: #4c4d4e !important;
+   --stories_skeleton_loader_background--active: #545556 !important;
+   --switch_ios_off_border: #2c2d2e !important;
+   --switch_ios_off_border--hover: #343536 !important;
+   --switch_ios_off_border--active: #3d3e3f !important;
+   --tabbar_active_icon: #ffffff !important;
+   --tabbar_active_icon--hover: #ebedf0 !important;
+   --tabbar_active_icon--active: #d7d8db !important;
+   --tabbar_background: #2c2d2e !important;
+   --tabbar_background--hover: #343536 !important;
+   --tabbar_background--active: #3d3e3f !important;
+   --tabbar_inactive_icon: #76787a !important;
+   --tabbar_inactive_icon--hover: #7b7d7f !important;
+   --tabbar_inactive_icon--active: #818385 !important;
+   --tabbar_tablet_active_icon: #71aaeb !important;
+   --tabbar_tablet_active_icon--hover: #77adec !important;
+   --tabbar_tablet_active_icon--active: #7cb1ed !important;
+   --tabbar_tablet_background: #232324 !important;
+   --tabbar_tablet_background--hover: #2c2c2d !important;
+   --tabbar_tablet_background--active: #353536 !important;
+   --tabbar_tablet_inactive_icon: #76787a !important;
+   --tabbar_tablet_inactive_icon--hover: #7b7d7f !important;
+   --tabbar_tablet_inactive_icon--active: #818385 !important;
+   --tabbar_tablet_text_primary: #e1e3e6 !important;
+   --tabbar_tablet_text_primary--hover: #e2e4e7 !important;
+   --tabbar_tablet_text_primary--active: #e3e5e8 !important;
+   --tabbar_tablet_text_secondary: #76787a !important;
+   --tabbar_tablet_text_secondary--hover: #7b7d7f !important;
+   --tabbar_tablet_text_secondary--active: #818385 !important;
+   --text_action_counter: #aaaeb3 !important;
+   --text_action_counter--hover: #adb1b6 !important;
+   --text_action_counter--active: #b1b4b9 !important;
+   --text_link: #71aaeb !important;
+   --text_link--hover: #77adec !important;
+   --text_link--active: #7cb1ed !important;
+   --vkui--color_text_link: #71aaeb !important;
+   --vkui--color_text_link--hover: #77adec !important;
+   --vkui--color_text_link--active: #7cb1ed !important;
+   --text_link_highlighted_background: #71aaeb !important;
+   --text_link_highlighted_background--hover: #77adec !important;
+   --text_link_highlighted_background--active: #7cb1ed !important;
+   --text_muted: #c4c8cc !important;
+   --text_muted--hover: #c6cace !important;
+   --text_muted--active: #c9ccd0 !important;
+   --vkui--color_text_muted: #c4c8cc !important;
+   --vkui--color_text_muted--hover: #c6cace !important;
+   --vkui--color_text_muted--active: #c9ccd0 !important;
+   --text_name: #e1e3e6 !important;
+   --text_name--hover: #e2e4e7 !important;
+   --text_name--active: #e3e5e8 !important;
+   --text_placeholder: #aaaeb3 !important;
+   --text_placeholder--hover: #adb1b6 !important;
+   --text_placeholder--active: #b1b4b9 !important;
+   --text_primary: #e1e3e6 !important;
+   --text_primary--hover: #e2e4e7 !important;
+   --text_primary--active: #e3e5e8 !important;
+   --vkui--color_text_primary: #e1e3e6 !important;
+   --vkui--color_text_primary--hover: #e2e4e7 !important;
+   --vkui--color_text_primary--active: #e3e5e8 !important;
+   --text_secondary: #76787a !important;
+   --text_secondary--hover: #7b7d7f !important;
+   --text_secondary--active: #818385 !important;
+   --vkui--color_text_secondary: #76787a !important;
+   --vkui--color_text_secondary--hover: #7b7d7f !important;
+   --vkui--color_text_secondary--active: #818385 !important;
+   --text_subhead: #909499 !important;
+   --text_subhead--hover: #94989d !important;
+   --text_subhead--active: #999da1 !important;
+   --vkui--color_text_subhead: #909499 !important;
+   --vkui--color_text_subhead--hover: #94989d !important;
+   --vkui--color_text_subhead--active: #999da1 !important;
+   --text_tertiary: #5d5f61 !important;
+   --text_tertiary--hover: #636567 !important;
+   --text_tertiary--active: #6a6c6e !important;
+   --vkui--color_text_tertiary: #5d5f61 !important;
+   --vkui--color_text_tertiary--hover: #636567 !important;
+   --vkui--color_text_tertiary--active: #6a6c6e !important;
+   --toolbar_attach_background_from: #76787a !important;
+   --toolbar_attach_background_from--hover: #7b7d7f !important;
+   --toolbar_attach_background_from--active: #818385 !important;
+   --toolbar_attach_background_to: #5d5f61 !important;
+   --toolbar_attach_background_to--hover: #636567 !important;
+   --toolbar_attach_background_to--active: #6a6c6e !important;
+   --vk_connect_button_primary_background: #e1e3e6 !important;
+   --vk_connect_button_primary_background--hover: #e2e4e7 !important;
+   --vk_connect_button_primary_background--active: #e3e5e8 !important;
+   --vk_connect_button_primary_foreground: #19191a !important;
+   --vk_connect_button_primary_foreground--hover: #222223 !important;
+   --vk_connect_button_primary_foreground--active: #2b2b2c !important;
+   --vk_connect_button_secondary_background: #454647 !important;
+   --vk_connect_button_secondary_background--hover: #4c4d4e !important;
+   --vk_connect_button_secondary_background--active: #545556 !important;
+   --vk_connect_button_secondary_foreground: #e1e3e6 !important;
+   --vk_connect_button_secondary_foreground--hover: #e2e4e7 !important;
+   --vk_connect_button_secondary_foreground--active: #e3e5e8 !important;
+   --writebar_icon: #e1e3e6 !important;
+   --writebar_icon--hover: #e2e4e7 !important;
+   --writebar_icon--active: #e3e5e8 !important;
+   --vkui--color_write_bar_icon: #e1e3e6 !important;
+   --vkui--color_write_bar_icon--hover: #e2e4e7 !important;
+   --vkui--color_write_bar_icon--active: #e3e5e8 !important;
+   --scrollbar_background: #19191a !important;
+   --scrollbar_background--hover: #222223 !important;
+   --scrollbar_background--active: #2b2b2c !important;
+   --scrollbar_thumb: #ffffff14 !important;
+   --scrollbar_thumb--hover: rgba(255, 255, 255, 0.12) !important;
+   --scrollbar_thumb--active: rgba(255, 255, 255, 0.16) !important;
+   --vkui--vkontakte_color_im_bubble_outgoing: #454647 !important;
+   --vkui--vkontakte_color_im_bubble_outgoing--hover: #4c4d4e !important;
+   --vkui--vkontakte_color_im_bubble_outgoing--active: #545556 !important;
+}
+
+#page_wrap #side_bar {
+   margin-left: 0px !important;
+   margin-right: 0px !important;
+   padding-left: 108px !important;
+   padding-right: 0px !important;
+   width: 40px !important;
+   z-index: 103 !important;
+   overflow: initial !important;
+}
+
+body .side_bar #side_bar_inner,
+body .side_bar .side_bar_inner {
+   right: 0px !important;
+   width: 32px !important;
+}
+
+#side_bar_inner,
+.side_bar_inner {
+   --vknext_sb_item_hover_border_radius: calc(
+      var(--vkui--size_border_radius_paper--regular, 4px) - 2px
+   );
+   box-shadow: var(--page-block-shadow) !important;
+   margin-top: calc(var(--header-height) + 16px) !important;
+   position: relative !important;
+   right: calc(var(--page-block-offset, 15px) - 2px) !important;
+   background: var(--vkui--color_background_content) !important;
+   border-radius: var(--vkui--size_border_radius_paper--regular) !important;
+   padding: 4px !important;
+}
+
+.side_bar_nav_wrap {
+   width: inherit;
+   margin: 0 0 10px -6px;
+}
+
+body .side_bar .LeftMenu__itemLink,
+body .side_bar [class^="LeftMenuItem-module__item--"],
+body .side_bar [class^="LeftMenuSection-module__hiddenItems--"],
+body .side_bar li > a {
+   position: relative;
+   width: calc(var(--left-menu-icon-size, 20px) + 12px) !important;
+}
+
+[class^="LeftMenuItem-module__item"] {
+   border-radius: var(--vknext_sb_item_hover_border_radius) !important;
+}
+
+/* Шестирёнка */
+[class^="LeftMenuItem-module__item"] {
+   border-radius: var(--vknext_sb_item_hover_border_radius) !important;
+}
+
+body .side_bar [class^="LeftMenuItem-module__icon"] {
+   margin-right: 0px !important;
+}
+/* https://vk.com/club216562058 */
+/* https://sun37-1.userapi.com/s/v1/ig2/-Z2IbC41oNQTdOdp1dJdq51-dRZ98XfJAcJpJeiXQXdDmyas_EEQWaUc1e0vsnXk2THIDY-mngw7fo0HUxo-N8F8.jpg?quality=95&crop=332,15,345,345&as=32x32,48x48,72x72,108x108,160x160,240x240&ava=1&cs=50x50 */
+
+/* https://vk.com/internet_explorer_official */
+/* https://sun37-1.userapi.com/s/v1/ig2/pOMAykk_v9cn2cM8J2aufBR1zyauc48Uyra1NhJou9egJYzgx703w2J3PsTtOu8mOIPXAIOC2HpqKcLiV7ggImGK.jpg?quality=95&crop=486,24,366,366&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360&ava=1&cs=50x50 */
